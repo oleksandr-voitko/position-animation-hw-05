@@ -260,21 +260,6 @@ img {
     height: 70px;
 }
 
-/* .subtitel-dark::before{
-    content: "";
-    display: inline-block;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-
-    background: #F5F4FA;
-    border-radius: 4px;
-
-    background-image: url(../images/features/antena.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
 .features-list-item:not(:last-child){
     margin-right: 30px;
 }
@@ -299,10 +284,6 @@ img {
 .we-do {
     background-color: AFB1B8;
 }
-
-/* .we-do .container{
-    display: flex;
-} */
 
 .we-do-list{
     display: flex;
@@ -350,10 +331,6 @@ img {
 .team {
     background-color: #F5F4FA;
 }
-
-/* .team .container {
-    display: flex;
-} */
 
 .team-list {
     display: flex;
@@ -460,8 +437,6 @@ img {
 
 .customers-link-item-logo{
     fill: #AFB1B8;
-    /* width: 44px;
-    height: 49px; */
     
 }
 
@@ -473,7 +448,6 @@ img {
 .customers-list-link:focus{
     border: 1px solid var(--accent-btn-collor);
 }
-
 
 /* ПОДВАЛ */
 .footer {
@@ -654,7 +628,10 @@ img {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-
+.work-list-link:hover .overlay{
+    /* opacity: 1; */
+    top: 0;
+}
 
 .work-list-item:nth-child(3n){
     margin-right: 0;
@@ -673,8 +650,30 @@ img {
 
     margin-bottom: 4px;
 }
+.work-list-item-img-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: all 0.25s linear;
+}
 
 .work-list-description {
+
+    width: 322px;;
+    
+
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
