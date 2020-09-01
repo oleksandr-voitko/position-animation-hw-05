@@ -152,10 +152,15 @@ img {
     margin-right: 30px;
 }
 
-.header-tel-icon,
+.header-tel-icon{
+    width: 10px;
+    height: 15px;
+    fill: currentColor;
+    margin-right: 10px;
+}
 .header-mail-icon{
     width: 16px;
-    height: 16px;
+    height: 11px;
     fill: currentColor;
     margin-right: 10px;
 }
